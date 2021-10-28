@@ -15,7 +15,7 @@
 
 • **LTR**: = "ltr"
 
-*Defined in [packages/bodiless-layouts/src/withDirection/withDirection.tsx:18](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-layouts/src/withDirection/withDirection.tsx#L18)*
+*Defined in [packages/bodiless-layouts/src/withDirection/withDirection.tsx:18](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-layouts/src/withDirection/withDirection.tsx#L18)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **RTL**: = "rtl"
 
-*Defined in [packages/bodiless-layouts/src/withDirection/withDirection.tsx:19](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-layouts/src/withDirection/withDirection.tsx#L19)*
+*Defined in [packages/bodiless-layouts/src/withDirection/withDirection.tsx:19](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-layouts/src/withDirection/withDirection.tsx#L19)*

@@ -6,6 +6,10 @@
 
 * **Tag**
 
+## Implements
+
+* object & object & object
+
 ## Index
 
 ### Constructors
@@ -15,6 +19,7 @@
 ### Properties
 
 * [categoryId](tag.md#categoryid)
+* [categoryName](tag.md#categoryname)
 * [id](tag.md#id)
 * [name](tag.md#name)
 
@@ -26,9 +31,9 @@
 
 ###  constructor
 
-\+ **new Tag**(`id`: string, `name`: string, `categoryId?`: undefined | string): *[Tag](tag.md)*
+\+ **new Tag**(`id`: string, `name`: string, `categoryId?`: undefined | string, `categoryName?`: undefined | string): *[Tag](tag.md)*
 
-*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:24](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L24)*
+*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:30](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L30)*
 
 **Parameters:**
 
@@ -37,6 +42,7 @@ Name | Type |
 `id` | string |
 `name` | string |
 `categoryId?` | undefined &#124; string |
+`categoryName?` | undefined &#124; string |
 
 **Returns:** *[Tag](tag.md)*
 
@@ -46,7 +52,15 @@ Name | Type |
 
 • **categoryId**: *string*
 
-*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:22](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L22)*
+*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:26](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L26)*
+
+___
+
+###  categoryName
+
+• **categoryName**: *string*
+
+*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:30](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L30)*
 
 ___
 
@@ -54,7 +68,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:20](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L20)*
+*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:24](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L24)*
 
 ___
 
@@ -62,20 +76,20 @@ ___
 
 • **name**: *string*
 
-*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:24](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L24)*
+*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:28](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L28)*
 
 ## Methods
 
 ###  isEqual
 
-▸ **isEqual**(`tag`: [Tag](tag.md)): *boolean*
+▸ **isEqual**(`tag`: [TagType](../globals.md#tagtype)): *boolean*
 
-*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:32](https://github.com/johnsonandjohnson/Bodiless-JS/blob/c0f76da3/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L32)*
+*Defined in [packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts:39](https://github.com/allencit/Bodiless-JS/blob/aaf195a8/packages/bodiless-filtering/src/FilterByGroup/FilterByGroupStore.ts#L39)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`tag` | [Tag](tag.md) |
+`tag` | [TagType](../globals.md#tagtype) |
 
 **Returns:** *boolean*
