@@ -5,6 +5,7 @@
     - [Page Menu](/ContentEditorUserGuide/PageMenu/)
       - [New](/ContentEditorUserGuide/PageMenu/New/)
       - [Disable](/ContentEditorUserGuide/PageMenu/Disable/)
+      - [Clone](/ContentEditorUserGuide/PageMenu/Clone/)
       - [Delete](/ContentEditorUserGuide/PageMenu/Delete/)
       - [SEO](/ContentEditorUserGuide/PageMenu/SEO/)
     - [File Menu](/ContentEditorUserGuide/FileMenu/)
@@ -80,7 +81,7 @@
     - [Platform.sh](/Development/Platform.sh)
     - [API](/Development/API/)
   - [Api](/api/)
-    - [Globals](/api/globals)
+    - [Modules](/api/modules)
     - Classes
-      - [Breadcrumbitem](/api/classes/breadcrumbitem)
-      - [Breadcrumbstore](/api/classes/breadcrumbstore)
+      - [Breadcrumb Item](/api/classes/BreadcrumbItem)
+      - [Breadcrumb Store](/api/classes/BreadcrumbStore)
