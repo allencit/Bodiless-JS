@@ -28,6 +28,7 @@
       - [Burger Menu](/Components/Navigation/BurgerMenu)
       - [Menu](/Components/Navigation/Menu)
       - [Upgrade](/Components/Navigation/Upgrade)
+    - [OIDC](/Components/OIDC)
     - [Social Share](/Components/SocialShare)
     - [Embed](/Components/Embed)
     - [Filter By Group](/Components/FilterByGroup)
