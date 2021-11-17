@@ -22,6 +22,7 @@
     - [List](/Components/List)
     - [Link](/Components/Link)
     - [Image](/Components/Image)
+    - [Social Wall](/Components/SocialWall)
     - [Flow Container](/Components/FlowContainer)
     - [Navigation](/Components/Navigation/)
       - [Breadcrumbs](/Components/Navigation/Breadcrumbs)
