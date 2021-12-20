@@ -35,6 +35,7 @@ import {
   addProps,
   ComponentOrTag,
 } from '@bodiless/fclasses';
+import { useFormState } from 'informed';
 import { useFilterByGroupContext } from './FilterByGroupContext';
 import type { NodeTagType, FilterTagType } from './types';
 
@@ -74,20 +75,39 @@ const useDefaultFiltersData = () => {
 const renderForm = (props: ContextMenuFormProps) => {
   const { ui } = props;
   const { tags = [] } = useDefaultFiltersData();
+  const { values } = useFormState();
+
+  const hanldeSubmit = (e: any) => {
+    e.preventDefault();
+  };
+
   if (!tags.length) {
-    const { ComponentFormText } = getUI(ui);
-    return (<ComponentFormText
-        type="hidden" field="filterSelectionAction" initialValue={FilterSelectionAction.save}
-      />);
+    const { ComponentFormText, ComponentFormSubmitButton } = getUI(ui);
+    return (
+      <>
+        <ComponentFormText
+          type="hidden"
+          field="filterSelectionAction"
+          keepState
+          initialValue={FilterSelectionAction.save}
+        />
+        <ComponentFormSubmitButton
+          aria-label="Submit"
+          onClick={hanldeSubmit}
+        />
+      </>
+    );
   }
   const {
     ComponentFormLabel,
     ComponentFormRadioGroup,
     ComponentFormRadio,
+    ComponentFormSubmitButton,
   } = getUI(ui);
+
   return (
     <>
-      <ComponentFormRadioGroup field="filterSelectionAction">
+      <ComponentFormRadioGroup field="filterSelectionAction" keepState>
         <ComponentFormLabel id={FilterSelectionAction.reset} key={FilterSelectionAction.reset}>
           <ComponentFormRadio value={FilterSelectionAction.reset} />
           Reset Local Filter UI to Saved State
@@ -97,6 +117,10 @@ const renderForm = (props: ContextMenuFormProps) => {
           Clear Saved State from Page
         </ComponentFormLabel>
       </ComponentFormRadioGroup>
+      <ComponentFormSubmitButton
+        aria-label="Submit"
+        onClick={hanldeSubmit}
+      />
     </>
   );
 };
@@ -108,7 +132,7 @@ const renderForm = (props: ContextMenuFormProps) => {
  * @returns Default filter button menu option.
  */
 const useFilterSelectionMenuOptions = () => {
-  const { getSelectedTags, updateSelectedTags } = useFilterByGroupContext();
+  // const { getSelectedTags, updateSelectedTags } = useFilterByGroupContext();
   const { tags: defaultTags = [] } = useDefaultFiltersData();
   const formDescription = (!defaultTags.length) ? `Clicking the check will save the current Local
       Filter UI selections to this Page, creating a Save State.` : `Page now filtered by Saved
@@ -126,24 +150,25 @@ const useFilterSelectionMenuOptions = () => {
     isHidden: false,
     formDescription,
     renderForm,
-    submitValueHandler: (values: any) => {
-      const { filterSelectionAction = '' } = values;
-      switch (filterSelectionAction) {
-        case FilterSelectionAction.clear: {
-          const submitValues = { tags: [] };
-          return submitValues;
-        }
-        case FilterSelectionAction.reset: {
-          updateSelectedTags(defaultTags);
-          return { tags: defaultTags };
-        }
-        case FilterSelectionAction.save: {
-          const tags = getSelectedTags();
-          const submitValues = { tags };
-          return submitValues;
-        }
-      }
-    },
+    hasSubmit: false,
+    // submitValueHandler: (values: any) => {
+    //   const { filterSelectionAction = '' } = values;
+    //   switch (filterSelectionAction) {
+    //     case FilterSelectionAction.clear: {
+    //       const submitValues = { tags: [] };
+    //       return submitValues;
+    //     }
+    //     case FilterSelectionAction.reset: {
+    //       updateSelectedTags(defaultTags);
+    //       return { tags: defaultTags };
+    //     }
+    //     case FilterSelectionAction.save: {
+    //       const tags = getSelectedTags();
+    //       const submitValues = { tags };
+    //       return submitValues;
+    //     }
+    //   }
+    // },
   };
   return filterSelectionMenuOptions;
 };

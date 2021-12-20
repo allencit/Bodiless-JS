@@ -77,7 +77,7 @@ const FormChromeBase: FC<FormChromeProps> = (props) => {
       {title && <ComponentFormTitle>{title}</ComponentFormTitle>}
       {description && <ComponentFormDescription>{description}</ComponentFormDescription>}
       {children}
-      {hasSubmit && (<ComponentFormSubmitButton aria-label="Submit" />)}
+      {hasSubmit && (<ComponentFormSubmitButton aria-label="Submitfff" />)}
     </>
   );
 };

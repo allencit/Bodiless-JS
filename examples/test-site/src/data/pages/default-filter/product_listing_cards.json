@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "uuid": "fb0cf730-6158-11ec-986a-552ca74d1a42",
+      "wrapperProps": {
+        "className": "w-full"
+      },
+      "type": "FilterableProductCardVariations"
+    }
+  ]
+}
