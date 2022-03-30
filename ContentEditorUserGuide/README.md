@@ -55,8 +55,13 @@ Out of the box, the Toolbar has the following items:
 * [Edit](#edit)
 * [Page](#page)
 * [File](#file)
+* [Tools](#tools)<sup>*</sup>
 
-![The BodilessJS Toolbar](./assets/Toolbar.jpg ':size=50')
+<sup>*</sup> _Available in Edit Mode only._
+
+| Review Mode | Edit Mode |
+|:-----------:|:---------:|
+| ![The BodilessJS Toolbar in Review Mode](./assets/ToolbarReviewMode.jpg ':size=50') | ![The BodilessJS Toolbar in Edit Mode](./assets/ToolbarEditMode.jpg ':size=50') |
 
 #### Switcher
 
@@ -123,6 +128,18 @@ Click the **File** button to open the _File_ menu and interact with your site's 
 ![File menu](./assets/FileMenu.jpg ':size=50%')
 
 For more information, please see: [File Menu](./FileMenu/).
+
+#### Tools
+
+![Tools icon](./assets/ToolsIcon.jpg ':size=60')
+
+Click the **Tools** button to open the _Tools_ menu and access various utilities to help you
+edit/manage the content of and build your site.
+
+![Tools menu](./assets/ToolsMenu.jpg ':size=50%')
+
+For more information on the _Tools_ menu and the utilities it provides, please see: [Tools
+Menu](./ToolsMenu/).
 
 ### Page Layout
 
@@ -197,7 +214,8 @@ can easily populate your site with content. These contentful components will
 render the default content but you can easily override and edit the content to
 suit your needs.
 
-For information on layouts and working with the Flow Container see the [Flow Container documentation.](../../../Components/FlowContainer)
+For information on layouts and working with the Flow Container, see the [Flow Container
+documentation](../../../Components/FlowContainer/).
 
 ## Working with Content
 
@@ -244,55 +262,53 @@ options are available, where they are available to the editor, and which options
 are available for each variation.
 
 To read more about the Rich Text Editor see the [Rich Text Editor component
-documentation](../../../Components/RichText).
-
+documentation](../../../Components/Editors/RichText).
 
 ### Components
 
-The following components may be available for use on your BodilessJS site. Click
-the links below to read more about working with the individual components.
+The following components may be available for use on your BodilessJS site. Click the links below to
+read more about working with the individual components.
 
 #### Layout
 
-* [Flow Container](../../../Components/FlowContainer) 
-* [Rich Media Text Editor](../../../Components/RichText)
-* [Card](../../../Components/Card)
+* [Flow Container](/Components/FlowContainer/)
+* [Rich Text Editor](/Components/Editors/RichText)
+* [Card](/Components/Card)
 
 #### Media
 
-* [Image](../../../Components/Image)
-* [Youtube](../../../Components/YouTube) 
-* [Carousel](../../../Components/Carousel)
+* [Image](/Components/Image/)
+* [YouTube](/Components/YouTube)
+* [Carousel](/Components/Carousel)
 
 #### Interactions
 
-* [Link](../../../Components/Link) 
-* [Single Accordion](../../../Components/SingleAccordion) 
-* [Main Menu](../../../Components/MainMenu)
-* [List Filter](../../../Components/FilterByGroup)
+* [Link](/Components/Link/)
+* [Single Accordion](/Components/SingleAccordion)
+* [Navigation](/Components/Navigation/)
+* [List Filter](/Components/FilterByGroup)
 
 #### Integrations
 
-* [Bazaarvoice](../../../Components/bv)
-
+* [Bazaarvoice](/Components/bv)
 
 #### SEO
- 
-* [Sitemap.xml](../../../Development/Guides/BuildingSites/ComponentsStarterKit?id=sitemapxml-amp-robotstxt-file) 
-* Robots.txt 
-* [Metatags](../../../Development/Guides/BuildingSites/ComponentsStarterKit?id=metadata-component) 
+
+* `Sitemap.xml`
+* `Robots.txt`
+* [Metatags](/Development/Guides/BuildingSites/Meta/Metadata)
 
 ### Content Library
 
 Using the _Content Library_, you can save components that you've created, along with their embedded
 content, allowing you to reuse them elsewhere on your site. The Content Library can be configured
-for use in [Flow Containers](/Components/FlowContainer); once enabled, you will be able to:
+for use in [Flow Containers](/Components/FlowContainer/); once enabled, you will be able to:
 
 * Save components in your Flow Container to the Content Library.
-  * See: [Add a new component](/Components/FlowContainer#add-a-new-component)
+  * See: [Add a new component](/Components/FlowContainer/#add-a-new-component)
 * Add components saved in the Content Library to your Flow Container.
   * See: [Saving a component in the Content
-    Library](/Components/FlowContainer#saving-a-component-in-the-content-library)
+    Library](/Components/FlowContainer/#saving-a-component-in-the-content-library)
 * Unlink components from Content Library Items.
   * See: [Unlinking a component from the Content
-    Library](/Components/FlowContainer#unlinking-a-component-from-the-content-library)
+    Library](/Components/FlowContainer/#unlinking-a-component-from-the-content-library)
